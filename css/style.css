@@ -1,0 +1,156 @@
+:root{
+    --main-color:#FF206E;
+    --back-color:#212529;
+}
+.color-bnk {
+    color: var(--main-color);
+}
+a {
+    text-decoration: none;
+    
+}
+/****************** Start Header *****************/
+#home {
+    background-image: url(../imges/bggg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#home .icon {
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(220, 220, 220, 0.42);
+    transition: border-color 1s;
+}
+#home .icon i {
+    transition: color 1s;
+}
+#home .icon:hover i {
+    color: var(--main-color);
+}
+#home .icon:hover {
+    border-color: white;
+}
+/* Start Navbar */
+.ground-color {
+    background-color: var(--back-color);
+}
+.navbar-brand:hover {
+    color: white;
+}
+.navbar-brand , .nav-link {
+    color: white;
+}
+.navbar-nav .nav-link.active {
+    color: var(--main-color);
+}
+.nav-link:focus, .nav-link:hover {
+    color: white;
+}
+/* End Navbar */
+/* Start About */
+#About {
+    background-image: url(../imges/light_dot.jpg);
+}
+.title-p {
+    font-size: 6rem;
+    color: rgba(220, 220, 220, 0.358);
+    letter-spacing: 15px;
+}
+@media screen  and (max-width:768px){
+    .title-p {
+        font-size: 2rem;
+    }
+}
+/* End About */
+/* Start Services */
+#services .services-box .services-icon{
+    width: 50px;
+    height: 50px;
+}
+#services .services-box h3::after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 1s;
+}
+#services .services-box:hover h3::after{
+    width: 100px;
+}
+/* End services */
+.testmonials-box .testmonials-img img {
+    width: 50px;
+    height: 50px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+.carousel-indicators [data-bs-target] {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-indent: 0;    
+}
+/* Start Portfolio */
+
+#portfolio {
+    background-color:#F8F9FA ;
+}
+#portfolio .container .layer {
+    top: 0;
+    bottom: 100%;
+    left: 15px;
+    right: 15px;
+    background-color: white;
+    opacity: 0;
+    transition: all 1s;
+}
+
+#portfolio .container .portfolio-image:hover .layer {
+    bottom: 15px;
+    opacity: 1;
+}
+#portfolio .container .portfolio-image img {
+    transition: all 1s;
+}
+#portfolio .container .portfolio-image:hover img {
+    filter: blur(3px);
+}
+.curser{
+    cursor: pointer;
+}
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+.modal-header {
+    border: none;
+}
+.nav-pills .nav-item button{
+    /* background-color: var(--main-color); */
+    color: black;
+    border-radius: 50px;
+}
+.nav-pills .nav-link.active {
+    background-color: var(--main-color);
+}
+.btn-close {
+    --bs-btn-close-bg:none;
+    --bs-btn-close-opacity: 1;
+}
+#portfolio .modal-header i {
+    color: white;
+    font-size: 20px;
+}
+/* End Portfolio */
+/* Start Footer */
+#footer {
+    background-color: #212529;
+    color: white;
+}
